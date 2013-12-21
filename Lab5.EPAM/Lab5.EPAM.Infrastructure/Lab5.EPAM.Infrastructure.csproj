@@ -40,9 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\Annotations.cs" />
-    <Compile Include="Guard1\Exceptions1\ExceptionBase.cs" />
-    <Compile Include="Guard1\Guard.ExceptionThrowing.cs" />
-    <Compile Include="Guard1\Guard.NullReference.cs" />
+    <Compile Include="Guard\Exceptions\ExceptionBase.cs" />
+    <Compile Include="Guard\Guard.ExceptionThrowing.cs" />
+    <Compile Include="Guard\Guard.NullReference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
