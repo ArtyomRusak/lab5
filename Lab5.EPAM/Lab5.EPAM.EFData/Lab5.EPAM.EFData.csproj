@@ -50,10 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EFContext1\Initializers1\RecreateIfModelChanges.cs" />
-    <Compile Include="EFContext1\Mappings1\RoleMap.cs" />
-    <Compile Include="EFContext1\Mappings1\UserMap.cs" />
-    <Compile Include="EFContext1\SiteContext.cs" />
+    <Compile Include="EFContext\Initializers\RecreateIfModelChanges.cs" />
+    <Compile Include="EFContext\Mappings\RoleMap.cs" />
+    <Compile Include="EFContext\Mappings\UserMap.cs" />
+    <Compile Include="EFContext\SiteContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\Repository`2.cs" />
