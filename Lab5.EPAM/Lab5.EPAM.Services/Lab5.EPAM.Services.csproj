@@ -39,8 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\MembershipServiceException.cs" />
     <Compile Include="Exceptions\ServiceException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services1\MembershipService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lab5.EPAM.Core\Lab5.EPAM.Core.csproj">
+      <Project>{8EFDE075-CB0C-4D79-82C2-A9BEDE6CE83F}</Project>
+      <Name>Lab5.EPAM.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lab5.EPAM.Infrastructure\Lab5.EPAM.Infrastructure.csproj">
+      <Project>{9E1E4288-0759-4113-BAAF-40E09173CBCB}</Project>
+      <Name>Lab5.EPAM.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

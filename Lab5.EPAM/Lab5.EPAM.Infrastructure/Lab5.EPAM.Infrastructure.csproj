@@ -39,6 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Guard1\Exceptions1\ExceptionBase.cs" />
+    <Compile Include="Guard1\Guard.ExceptionThrowing.cs" />
+    <Compile Include="Guard1\Guard.NullReference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
