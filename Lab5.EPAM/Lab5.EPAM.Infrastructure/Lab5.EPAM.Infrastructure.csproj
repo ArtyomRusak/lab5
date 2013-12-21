@@ -39,17 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Guard\Guard.ExceptionThrowing.cs" />
-    <Compile Include="Properties\Annotations.cs" />
-    <Compile Include="Guard\Exceptions\ExceptionBase.cs" />
-    <Compile Include="Guard\Guard.NullReference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Lab5.EPAM.Core\Lab5.EPAM.Core.csproj">
-      <Project>{8efde075-cb0c-4d79-82c2-a9bede6ce83f}</Project>
-      <Name>Lab5.EPAM.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
