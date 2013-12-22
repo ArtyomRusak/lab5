@@ -8,11 +8,10 @@ namespace Lab5.EPAM.EFData.EFContext.Mappings
         public UserMap()
         {
             HasKey(e => e.Id);
-            Property(e => e.UserName).IsRequired();
+            Property(e => e.UserName).HasMaxLength(30).IsRequired();
             Property(e => e.Email).HasMaxLength(40).IsRequired();
             Property(e => e.PasswordSalt).IsRequired();
             Property(e => e.Password).IsRequired();
-            HasMany(e => e.Roles).WithMany(e => e.Users);
         }
     }
 }

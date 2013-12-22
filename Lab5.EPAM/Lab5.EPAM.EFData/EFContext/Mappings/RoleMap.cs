@@ -8,8 +8,7 @@ namespace Lab5.EPAM.EFData.EFContext.Mappings
         public RoleMap()
         {
             HasKey(e => e.Id);
-            Property(e => e.Name).IsRequired();
-            HasMany(e => e.Users).WithMany(e => e.Roles);
+            Property(e => e.Name).HasMaxLength(40).IsRequired();
         }
     }
 }
