@@ -124,6 +124,8 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\BoysPage.cshtml" />
+    <Content Include="Views\Home\GirlsPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -170,6 +172,7 @@
     <Compile Include="Mappings\IMapper.cs" />
     <Compile Include="Mappings\LoginUserMapper.cs" />
     <Compile Include="Mappings\RegisterUserMapper.cs" />
+    <Compile Include="Models\GirlBoyUserViewModel.cs" />
     <Compile Include="Models\LoginUserViewModel.cs" />
     <Compile Include="Models\RegisterUserViewModel.cs" />
     <Compile Include="Models\ViewModel.cs" />

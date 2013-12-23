@@ -86,7 +86,7 @@ namespace Lab5.EPAM.WebUI.Controllers
 
                     unitOfWork.Dispose();
 
-                    var ticket = new FormsAuthenticationTicket(3, loginUser.Id.ToString(), DateTime.Now,
+                    var ticket = new FormsAuthenticationTicket(3, loginUser.Email, DateTime.Now,
                         DateTime.Now.AddMinutes(20), model.RememberMe, "");
                     var cookieString = FormsAuthentication.Encrypt(ticket);
                     var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, cookieString);
@@ -127,12 +127,12 @@ namespace Lab5.EPAM.WebUI.Controllers
             var context = new SiteContext(Resources.ConnectionString);
             var unitOfWork = new UnitOfWork(context);
             var membershipService = new MembershipService(unitOfWork, unitOfWork);
-            var user = membershipService.GetUserById(int.Parse(User.Identity.Name));
+            var user = membershipService.GetUserByEmail(User.Identity.Name);
             FormsAuthentication.SignOut();
             membershipService.LogOut(user.Id);
             unitOfWork.Dispose();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
     }
 }

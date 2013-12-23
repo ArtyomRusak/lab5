@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5.EPAM.EFData", "Lab5.EP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5.EPAM.WebUI", "Lab5.EPAM.WebUI\Lab5.EPAM.WebUI.csproj", "{D928A8D9-D535-4352-99EA-1CDC222F0E03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5.EPAM.Tests", "Lab5.EPAM.Tests\Lab5.EPAM.Tests.csproj", "{DCCB7A06-96F4-4D4D-A522-0EA5CC04651A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D928A8D9-D535-4352-99EA-1CDC222F0E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D928A8D9-D535-4352-99EA-1CDC222F0E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D928A8D9-D535-4352-99EA-1CDC222F0E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCB7A06-96F4-4D4D-A522-0EA5CC04651A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCB7A06-96F4-4D4D-A522-0EA5CC04651A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCB7A06-96F4-4D4D-A522-0EA5CC04651A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCB7A06-96F4-4D4D-A522-0EA5CC04651A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

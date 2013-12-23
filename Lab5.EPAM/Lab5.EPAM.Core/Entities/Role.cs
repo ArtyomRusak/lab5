@@ -10,7 +10,7 @@ namespace Lab5.EPAM.Core.Entities
     {
         public Role()
         {
-            this.Users = new HashSet<User>();
+            Users = new HashSet<User>();
         }
 
         public string Name { get; set; }

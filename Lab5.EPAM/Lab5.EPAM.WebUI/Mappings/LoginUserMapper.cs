@@ -10,7 +10,7 @@ namespace Lab5.EPAM.WebUI.Mappings
 {
     public class LoginUserMapper : IMapper<User, LoginUserViewModel>
     {
-        public LoginUserViewModel MapEntityYoViewModel(User entity)
+        public LoginUserViewModel MapEntityToViewModel(User entity)
         {
             var viewModel = new LoginUserViewModel()
             {

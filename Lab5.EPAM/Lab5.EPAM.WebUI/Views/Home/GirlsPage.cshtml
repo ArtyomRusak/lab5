@@ -1,0 +1,12 @@
+﻿@model Lab5.EPAM.WebUI.Models.GirlBoyUserViewModel
+
+@{
+    ViewBag.Title = "GirlsPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>You are girl! Congratulations!</h1>
+<h2>Your username - @Model.UserName</h2>
+<h3>Your email - @Model.Email</h3>
+<h4>Count of girls - @Model.CountOfGirls</h4>
+<h4>Count of boys - @Model.CountOfBoys</h4>

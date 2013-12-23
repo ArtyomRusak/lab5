@@ -9,7 +9,7 @@ namespace Lab5.EPAM.WebUI.Mappings
 {
     public class RegisterUserMapper : IMapper<User, RegisterUserViewModel>
     {
-        public RegisterUserViewModel MapEntityYoViewModel(User entity)
+        public RegisterUserViewModel MapEntityToViewModel(User entity)
         {
             return null;
         }

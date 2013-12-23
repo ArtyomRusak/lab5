@@ -60,20 +60,13 @@ namespace Lab5.EPAM.WebUI
                         var context = new SiteContext(Resources.ConnectionString);
                         var unitOfWork = new UnitOfWork(context);
                         var membershipService = new MembershipService(unitOfWork, unitOfWork);
-                        var user = membershipService.GetUserById(int.Parse(i.Name));
+                        var user = membershipService.GetUserByEmail(i.Name);
                         var roles = user.Roles.Select(w => w.Name).ToArray();
                         HttpContext.Current.User = new GenericPrincipal(i, roles);
                         unitOfWork.Dispose();
                     }
                 }
             }
-            //else
-            //{
-            //    var ticket = new FormsAuthenticationTicket(3, "Guest", DateTime.Now, DateTime.Now.AddMinutes(20), false, "");
-            //    //var cookieString = FormsAuthentication.Encrypt(ticket);
-            //    //var cookie = new HttpCookie(cookieString);
-            //    HttpContext.Current.User = new GenericPrincipal(new FormsIdentity(ticket), new[] { "User" });
-            //}
         }
 
         protected void Application_Error(object sender, EventArgs e)

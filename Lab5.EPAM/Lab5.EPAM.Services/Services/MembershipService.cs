@@ -106,6 +106,22 @@ namespace Lab5.EPAM.Services.Services
             UpdateUser(user);
         }
 
+        public int GetCountOfBoys()
+        {
+            var userRepository = _factoryOfRepositories.GetUserRepository();
+            var boyRole = GetRoleByName("Boy");
+
+            return userRepository.Filter(e => e.Male).Count();
+        }
+
+        public int GetCountOfGirls()
+        {
+            var userRepository = _factoryOfRepositories.GetUserRepository();
+            var girlRole = GetRoleByName("Girl");
+
+            return userRepository.Filter(e => !e.Male).Count();
+        }
+
         public User GetUserByEmail(string email)
         {
             var userRepository = _factoryOfRepositories.GetUserRepository();
