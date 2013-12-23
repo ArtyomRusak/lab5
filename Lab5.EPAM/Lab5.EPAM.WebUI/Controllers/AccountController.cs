@@ -129,7 +129,6 @@ namespace Lab5.EPAM.WebUI.Controllers
             var membershipService = new MembershipService(unitOfWork, unitOfWork);
             var user = membershipService.GetUserByEmail(User.Identity.Name);
             FormsAuthentication.SignOut();
-            membershipService.LogOut(user.Id);
             unitOfWork.Dispose();
 
             return RedirectToAction("Login", "Account");

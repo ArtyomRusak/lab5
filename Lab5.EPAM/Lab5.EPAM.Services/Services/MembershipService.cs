@@ -84,8 +84,6 @@ namespace Lab5.EPAM.Services.Services
                 }
                 if (user.VerifyPassword(password))
                 {
-                    user.IsLogged = true;
-                    UpdateUser(user);
                     return user;
                 }
                 else
@@ -97,13 +95,6 @@ namespace Lab5.EPAM.Services.Services
             {
                 throw new MembershipServiceException(e.Message);
             }
-        }
-
-        public void LogOut(int userId)
-        {
-            var user = GetUserById(userId);
-            user.IsLogged = false;
-            UpdateUser(user);
         }
 
         public int GetCountOfBoys()

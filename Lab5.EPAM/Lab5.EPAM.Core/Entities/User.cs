@@ -18,7 +18,6 @@ namespace Lab5.EPAM.Core.Entities
         public string PasswordSalt { get; set; }
         public string Email { get; set; }
         public bool Male { get; set; }
-        public bool IsLogged { get; set; }
         public virtual ICollection<Role> Roles { get; set; }
 
         public void SetPassword(string password)
