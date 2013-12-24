@@ -2,10 +2,10 @@
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using AR.EPAM.Infrastructure.Guard;
 using Lab5.EPAM.Core;
 using Lab5.EPAM.Core.Exceptions;
 using Lab5.EPAM.Core.InterfaceRepository;
+using Lab5.EPAM.Infrastructure.Guard;
 
 namespace Lab5.EPAM.EFData.Repositories
 {
