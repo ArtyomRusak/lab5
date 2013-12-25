@@ -27,15 +27,6 @@ namespace Lab5.EPAM.WebUI
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
 
             RouteTable.Routes.MapRoute("Default", "{controller}/{action}", new { controller = "Account", action = "Register" });
-            //AttributeRoutingConfig.Start();
-
-            //var builder = new ContainerBuilder();
-
-            //SiteContext context = new SiteContext(Resources.ConnectionString);
-            //builder.Register(x => context).As<DbContext>();
-            //builder.RegisterType<UnitOfWork>().As<IUnitOfWork>();
-            //builder.RegisterType<UnitOfWork>().As<IRepositoryFactory>();
-            //builder.RegisterAssemblyTypes()
         }
 
         protected void Session_Start(object sender, EventArgs e)

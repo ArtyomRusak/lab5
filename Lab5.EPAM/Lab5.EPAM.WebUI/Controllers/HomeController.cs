@@ -18,6 +18,7 @@ namespace Lab5.EPAM.WebUI.Controllers
     public class HomeController : Controller
     {
         [HttpGet]
+        [AttributeRouting.Web.Mvc.Route("home")]
         public ActionResult Index()
         {
             return View();

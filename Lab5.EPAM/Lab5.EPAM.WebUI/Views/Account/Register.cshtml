@@ -10,10 +10,10 @@
 <h2>Register</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "form" }))
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <hr />
         @Html.ValidationSummary(true)
@@ -64,4 +64,14 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $("#form").on("submit", function (event) {
+            event.preventDefault();
+            if ($("#form").validate().form()) {
+                $.post("/register", $("#form").serialize(), function () {
+                    window.location.href = '@Url.Action("Login")';
+                });
+            }
+        })
+    </script>
 }
